@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
+<body>
+
+    <img class="background" src="resources/images/Seychelles.jpg">
+    <div class="log_in">
+        <div class="log_Logo">
+            <img class="log_in" src="resources/images/Logo_GlobeTrotters.png">
+            <p>Avec GlobeTrotters, partagez avec le monde <br />
+            vos expériences à travers le globe</p>
+        </div>
+        <div class="contener">
+            <div class="log_in_box">
+                <h2>Connexion</h2>
+                <div class="mail">
+                    <label for="email"></label>
+                    <input type="email" placeholder="Adresse email ou numéro de tél" name="email">
+                </div>
+                <div class="pass">
+                    <label for="pass"></label>
+                    <input type="password" placeholder="Mot de passe" name="pass">
+                </div>
+                <button class="connexion" type="button">
+                    Se connecter
+                </button>
+                <a href="#">Mot de passe oublié ?</a>
+                <button class="account" type="button" onclick="openForm()">
+                    créer un compte
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="form-popup" id="myForm">
+        <form action="/inscription.php" class="form-container">
+            <h1>Inscription</h1>
+            <div class="nom">
+                <div class="name">
+                    <label for="nom"><b>Nom</b></label>
+                    <input type="text" placeholder="Entrer votre nom" name="name" required>
+                </div>
+                <div class="first-name">
+                    <label for="prenom"><b>Prenom</b></label>
+                    <input type="text" placeholder="Entrer votre prenom" name="prenom" required>
+                </div>
+            </div>
+            <div class="email">
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Entrer votre email" name="email" required>
+            </div>
+            <div class="password">
+                <label for="password"><b>Mot de passe</b></label>
+                <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+            </div>
+                <button class="btn" type="submit">S'inscrire</button>
+                <button class="btn-cancel" type="button" onclick="closeForm()">Fermer</button>
+        </form>
+    </div>
+    <script src="popup-acount.js"></script>
+    <script src="form-validation.js"></script>
+</body>
+</html>
