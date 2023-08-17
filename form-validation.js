@@ -4,13 +4,13 @@ function validateForm(event) {
     
     // Validation des champs
     const firstName = document.querySelector('.firstName input[name="firstName"]').value.trim();
-    consolelog(firstName);
-    const name = document.querrySelector('.name input[name="name"]').value.trim();
-    consolelog(name);
-    const email = document.querrySelector('.email input[name="email"]').value.trim();
-    consolelog(email);
-    const password = document;querrySelector('.password input[name="password"]').value.trim()
-    consolelog(password);
+    console.log(firstName);
+    const name = document.querySelector('.name input[name="name"]').value.trim();
+    console.log(name);
+    const email = document.querySelector('.email input[name="email"]').value.trim();
+    console.log(email);
+    const password = document.querySelector('.password input[name="password"]').value.trim();
+    console.log(password);
 
 
     if (firstName === '' || name === '' || email === '' || password === '') {
