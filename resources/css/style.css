@@ -66,6 +66,7 @@ input[type="text"] {
 }
 
 .log_in_box {
+    max-width: 30rem;
     background: transparent;
     backdrop-filter: blur(20px);
     display: flex;
@@ -118,6 +119,7 @@ input[type="password"]::placeholder {
     font-weight: lighter;
     position: relative;
     width: 90%;
+    color: white;
 }
 
 .mail input[type="email"] {
@@ -135,6 +137,7 @@ input[type="email"]::placeholder {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: lighter;
+    color: white;
 }
 
 
@@ -378,4 +381,30 @@ input[type="password"]::placeholder {
 
 .btn-cancel:active {
     box-shadow: inset -2px -2px 3px rgba(0, 0, 0, 0.6), inset 2px 2px 3px rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 1224px) {
+      .log_in {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .log_Logo {
+        margin-top: 100px;
+        padding: 0;
+      }
+
+      .contener { 
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+      }
+
+      .log_in_box {
+        margin: 70px;
+        width: 100%;
+
+      }
 }
